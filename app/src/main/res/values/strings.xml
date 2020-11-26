@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">YourOpenInfo</string>
+    <string name="action_settings">Settings</string>
+    <string name="fab_action_text1">Your phone\'s IP related open Information.</string>
+    <string name="fab_icon_text1">Notice</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">(c)FreeNanum</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Strings used for first fragments for navigation -->
+    <string name="tab1_title">Your Information</string>
+    <string name="ip_title">1. Public IP address</string>
+    <string name="ip_content">Your IP</string>
+    <string name="city_title">2. City</string>
+    <string name="city_content">Your city</string>
+    <string name="region_title">3. Region</string>
+    <string name="region_content">Your region</string>
+    <string name="nation_title">4. Country</string>
+    <string name="nation_content">Your country</string>
+    <string name="geo_title">5. Geolocation</string>
+    <string name="geo_content">Your geolocation</string>
+    <string name="sp_title">6. Service provider</string>
+    <string name="sp_content">Your service provider</string>
+    <string name="post_title">7. Postal code</string>
+    <string name="post_content">Your postal code</string>
+    <string name="time_title">8. Timezone</string>
+    <string name="time_content">Your timezone</string>
+    <string name="tab1_button1">Get my information</string>
+</resources>
