@@ -6,7 +6,17 @@
 
 > 이 프로젝트는 학습 및 개인 정보 보호 인식 제고를 목적으로 제작되었습니다.
 
-## 2. 주요 기능 (Features)
+## 2. 앱 다운로드 (Download)
+
+대한민국 앱 마켓인 **원스토어(ONE store)**에서 앱을 다운로드할 수 있습니다.
+
+<a href="https://m.onestore.co.kr/ko-kr/apps/appsDetail.omp?prodId=0000753112" target="_blank">
+    <img src="https://raw.githubusercontent.com/freeNanum/Android-YourOpenInfo-App/main/assets/onestore_badge.png" alt="Download on ONE store" width="200"/>
+</a>
+
+> **Note:** 위 배지 이미지를 표시하기 위해, 프로젝트의 `assets` 폴더에 원스토어 배지 이미지를 추가했습니다. 만약 이미지가 보이지 않는다면, `main` 브랜치에 `assets/onestore_badge.png` 파일이 있는지 확인해주세요.
+
+## 3. 주요 기능 (Features)
 
 - **IP 정보 조회:** 버튼 클릭 시, 현재 기기의 공용 IP 주소와 관련된 정보를 가져옵니다.
 - **상세 정보 표시:** 조회된 정보를 아래와 같은 항목으로 나누어 명확하게 보여줍니다.
@@ -19,7 +29,7 @@
   - 위도 및 경도 (Latitude & Longitude)
 - **간단한 UI:** 직관적인 UI를 통해 누구나 쉽게 사용할 수 있습니다.
 
-## 3. 사용된 기술 및 라이브러리 (Tech Stack & Libraries)
+## 4. 사용된 기술 및 라이브러리 (Tech Stack & Libraries)
 
 - **언어 (Language):** Java
 - **플랫폼 (Platform):** Android
@@ -32,7 +42,7 @@
 - **외부 API:**
   - **[ip-api.com](http://ip-api.com/)**: IP 주소 기반 위치 정보 조회를 위한 무료 API
 
-## 4. 시작하기 (Getting Started)
+## 5. 시작하기 (Getting Started)
 
 ### 사전 요구사항
 
@@ -56,12 +66,14 @@
 4. **앱 실행:**
    - 상단의 `Run` 버튼을 클릭하거나 `Shift + F10`을 눌러 에뮬레이터 또는 연결된 실제 기기에서 앱을 실행합니다.
 
-## 5. 프로젝트 구조 (Project Structure)
+## 6. 프로젝트 구조 (Project Structure)
 
 ```
 app
 ├── src
 │   ├── main
+│   │   ├── assets
+│   │   │   └── onestore_badge.png      # 원스토어 배지 이미지
 │   │   ├── java/com/opensupport/youropeninfo
 │   │   │   ├── MainActivity.java       # 메인 액티비티
 │   │   │   ├── FirstFragment.java      # 정보 조회 및 표시 화면
@@ -74,7 +86,7 @@ app
 └── build.gradle                        # 프로젝트 레벨 빌드 설정
 ```
 
-## 6. 향후 개발 계획 (Future Work)
+## 7. 향후 개발 계획 (Future Work)
 
 - [ ] **IP 정보 조회 로직 구현:** `FirstFragment.java`에 `ip-api.com` API를 호출하고 결과를 파싱하여 `TextView`에 표시하는 기능 추가
 - [ ] **인터넷 권한 추가:** `AndroidManifest.xml`에 인터넷 사용 권한 추가
@@ -82,6 +94,6 @@ app
 - [ ] **AdMob 광고 제거:** 현재 포함된 샘플 AdMob ID 및 관련 코드 제거
 - [ ] **오류 처리:** 네트워크 연결 실패 또는 API 호출 오류 시 사용자에게 알림 표시
 
-## 7. 라이선스 (License)
+## 8. 라이선스 (License)
 
 본 프로젝트는 [MIT 라이선스](LICENSE)를 따릅니다.
