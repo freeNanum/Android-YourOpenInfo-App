@@ -18,16 +18,17 @@
 
 ## 3. 주요 기능 (Features)
 
-- **IP 정보 조회:** 버튼 클릭 시, 현재 기기의 공용 IP 주소와 관련된 정보를 가져옵니다.
-- **상세 정보 표시:** 조회된 정보를 아래와 같은 항목으로 나누어 명확하게 보여줍니다.
-  - IP 주소 (IP Address)
-  - 국가 (Country)
-  - 도시 (City)
-  - 지역 (Region)
-  - ISP (Internet Service Provider)
-  - 시간대 (Timezone)
-  - 위도 및 경도 (Latitude & Longitude)
-- **간단한 UI:** 직관적인 UI를 통해 누구나 쉽게 사용할 수 있습니다.
+- **IP 정보 조회:** 버튼 클릭 시, `ipinfo.io` API를 통해 현재 기기의 공용 IP 주소와 관련된 정보를 가져옵니다.
+- **상세 정보 표시:** `ipinfo.io`의 무료 API가 제공하는 아래의 상세 정보를 표시합니다.
+  - **IP:** 공용 IP 주소
+  - **Hostname:** IP 주소의 호스트 이름
+  - **City:** 도시
+  - **Region:** 지역 (주 또는 도)
+  - **Country:** 국가 코드
+  - **Location:** 위도 및 경도 좌표
+  - **Organization:** 인터넷 서비스 제공자(ISP) 또는 기관명
+  - **Postal:** 우편번호
+  - **Timezone:** 시간대
 
 ## 4. 사용된 기술 및 라이브러리 (Tech Stack & Libraries)
 
@@ -39,8 +40,10 @@
   - `com.google.android.material:material`: 머티리얼 디자인 컴포넌트 사용
   - `androidx.constraintlayout`: 복잡한 레이아웃을 유연하게 구성
   - `androidx.navigation`: 프래그먼트 간의 이동을 관리
+  - `java.net.HttpURLConnection`: 네트워킹
+  - `org.json`: JSON 파싱
 - **외부 API:**
-  - **[ip-api.com](http://ip-api.com/)**: IP 주소 기반 위치 정보 조회를 위한 무료 API
+  - **[ipinfo.io](https://ipinfo.io/)**: IP 주소 기반 위치 정보 조회를 위한 무료 API
 
 ## 5. 시작하기 (Getting Started)
 
@@ -88,11 +91,9 @@ app
 
 ## 7. 향후 개발 계획 (Future Work)
 
-- [ ] **IP 정보 조회 로직 구현:** `FirstFragment.java`에 `ip-api.com` API를 호출하고 결과를 파싱하여 `TextView`에 표시하는 기능 추가
-- [ ] **인터넷 권한 추가:** `AndroidManifest.xml`에 인터넷 사용 권한 추가
 - [ ] **UI 개선:** 조회된 정보를 더 명확하고 보기 좋게 디자인 개선
 - [ ] **AdMob 광고 제거:** 현재 포함된 샘플 AdMob ID 및 관련 코드 제거
-- [ ] **오류 처리:** 네트워크 연결 실패 또는 API 호출 오류 시 사용자에게 알림 표시
+- [ ] **오류 처리 개선:** 네트워크 연결 실패 또는 API 호출 오류 시 사용자에게 더 상세한 알림 표시
 
 ## 8. 라이선스 (License)
 
